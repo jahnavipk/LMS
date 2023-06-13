@@ -1,0 +1,102 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/authenticate",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/company/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/company/register",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/v1.0/lms/company/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+
+      "UpstreamPathTemplate": "/api/v1.0/lms/company/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/courses/addcourse",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/courses/addcourse",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/courses/delete/{courseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/courses/delete/{courseId}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/courses/getCourse",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/courses/getCourse",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/courses/activate/{courseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 19784
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/courses/activate/{courseId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/lms/courses/info/get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 24171
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/lms/courses/info/get",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ]
+}
